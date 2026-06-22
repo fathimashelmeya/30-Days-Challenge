@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting App</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #d260e9;
+      }
+      .box {
+        text-align: center;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+      }
+      h1 {
+        color: #333;
+      }
+      input {
+        width: 220px;
+        padding: 10px;
+        margin: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Login Form</h1>
+      <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username" required />
+        <br />
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+        <br />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
